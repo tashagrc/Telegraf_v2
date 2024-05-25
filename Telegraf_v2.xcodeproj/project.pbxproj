@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A36257842C022D22005268FC /* OnboardDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257832C022D22005268FC /* OnboardDeviceView.swift */; };
+		A36257862C024A60005268FC /* GestureStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257852C024A60005268FC /* GestureStartView.swift */; };
+		A36257882C024A7C005268FC /* GestureTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257872C024A7B005268FC /* GestureTrainingView.swift */; };
+		A362578A2C024A9D005268FC /* GestureSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257892C024A9D005268FC /* GestureSuccessView.swift */; };
+		A362578C2C024ABB005268FC /* FinishOnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362578B2C024ABB005268FC /* FinishOnboardView.swift */; };
+		A362578F2C024ADA005268FC /* MorseGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362578E2C024ADA005268FC /* MorseGuideView.swift */; };
+		A36257912C024AE8005268FC /* GestureRecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257902C024AE8005268FC /* GestureRecapView.swift */; };
 		A3817DD82BFEE7A00025E6E5 /* Telegraf_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817DD72BFEE7A00025E6E5 /* Telegraf_v2App.swift */; };
 		A3817DDC2BFEE7A10025E6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3817DDB2BFEE7A10025E6E5 /* Assets.xcassets */; };
 		A3817DE02BFEE7A10025E6E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3817DDF2BFEE7A10025E6E5 /* Preview Assets.xcassets */; };
@@ -16,7 +23,6 @@
 		A3817E032BFEE8280025E6E5 /* TelegrafMultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E022BFEE8280025E6E5 /* TelegrafMultipeerSession.swift */; };
 		A3817E072BFEE8310025E6E5 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E042BFEE8310025E6E5 /* StartView.swift */; };
 		A3817E082BFEE8310025E6E5 /* PairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E052BFEE8310025E6E5 /* PairView.swift */; };
-		A3817E092BFEE8310025E6E5 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E062BFEE8310025E6E5 /* GameView.swift */; };
 		A3817E0C2BFEEA0D0025E6E5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E0A2BFEEA0D0025E6E5 /* LandingView.swift */; };
 		A3817E0D2BFEEA0D0025E6E5 /* PlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E0B2BFEEA0D0025E6E5 /* PlaygroundView.swift */; };
 		A3817E0F2BFEEA120025E6E5 /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E0E2BFEEA120025E6E5 /* FontName.swift */; };
@@ -50,6 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A36257832C022D22005268FC /* OnboardDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardDeviceView.swift; sourceTree = "<group>"; };
+		A36257852C024A60005268FC /* GestureStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureStartView.swift; sourceTree = "<group>"; };
+		A36257872C024A7B005268FC /* GestureTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTrainingView.swift; sourceTree = "<group>"; };
+		A36257892C024A9D005268FC /* GestureSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureSuccessView.swift; sourceTree = "<group>"; };
+		A362578B2C024ABB005268FC /* FinishOnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishOnboardView.swift; sourceTree = "<group>"; };
+		A362578E2C024ADA005268FC /* MorseGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseGuideView.swift; sourceTree = "<group>"; };
+		A36257902C024AE8005268FC /* GestureRecapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecapView.swift; sourceTree = "<group>"; };
 		A3817DD42BFEE7A00025E6E5 /* Telegraf_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegraf_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3817DD72BFEE7A00025E6E5 /* Telegraf_v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telegraf_v2App.swift; sourceTree = "<group>"; };
 		A3817DDB2BFEE7A10025E6E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,7 +76,6 @@
 		A3817E022BFEE8280025E6E5 /* TelegrafMultipeerSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelegrafMultipeerSession.swift; sourceTree = "<group>"; };
 		A3817E042BFEE8310025E6E5 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		A3817E052BFEE8310025E6E5 /* PairView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairView.swift; sourceTree = "<group>"; };
-		A3817E062BFEE8310025E6E5 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		A3817E0A2BFEEA0D0025E6E5 /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		A3817E0B2BFEEA0D0025E6E5 /* PlaygroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
 		A3817E0E2BFEEA120025E6E5 /* FontName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
@@ -101,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A362578D2C024AC5005268FC /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				A362578E2C024ADA005268FC /* MorseGuideView.swift */,
+				A36257902C024AE8005268FC /* GestureRecapView.swift */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
 		A3817DCB2BFEE7A00025E6E5 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +205,7 @@
 		A3817E142BFEEAE50025E6E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A362578D2C024AC5005268FC /* Guide */,
 				A3817E1E2BFEEDE10025E6E5 /* Onboard */,
 				A3817E1D2BFEEDDA0025E6E5 /* Start */,
 				A3817E1C2BFEEDCE0025E6E5 /* Playground */,
@@ -198,7 +220,6 @@
 				A3817E212BFEF0B80025E6E5 /* TransmitterView.swift */,
 				A3817E232BFEF11F0025E6E5 /* ReceiverView.swift */,
 				A3817E052BFEE8310025E6E5 /* PairView.swift */,
-				A3817E062BFEE8310025E6E5 /* GameView.swift */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -215,6 +236,11 @@
 		A3817E1E2BFEEDE10025E6E5 /* Onboard */ = {
 			isa = PBXGroup;
 			children = (
+				A36257832C022D22005268FC /* OnboardDeviceView.swift */,
+				A36257852C024A60005268FC /* GestureStartView.swift */,
+				A36257872C024A7B005268FC /* GestureTrainingView.swift */,
+				A36257892C024A9D005268FC /* GestureSuccessView.swift */,
+				A362578B2C024ABB005268FC /* FinishOnboardView.swift */,
 			);
 			path = Onboard;
 			sourceTree = "<group>";
@@ -371,17 +397,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A36257912C024AE8005268FC /* GestureRecapView.swift in Sources */,
 				A3817E262BFEF1500025E6E5 /* CustomTabButton.swift in Sources */,
 				A3817E0D2BFEEA0D0025E6E5 /* PlaygroundView.swift in Sources */,
+				A36257862C024A60005268FC /* GestureStartView.swift in Sources */,
+				A362578C2C024ABB005268FC /* FinishOnboardView.swift in Sources */,
 				A3817E082BFEE8310025E6E5 /* PairView.swift in Sources */,
 				A3817E032BFEE8280025E6E5 /* TelegrafMultipeerSession.swift in Sources */,
 				A3817E0F2BFEEA120025E6E5 /* FontName.swift in Sources */,
 				A3817E0C2BFEEA0D0025E6E5 /* LandingView.swift in Sources */,
 				A3817DD82BFEE7A00025E6E5 /* Telegraf_v2App.swift in Sources */,
-				A3817E092BFEE8310025E6E5 /* GameView.swift in Sources */,
 				A3817E242BFEF11F0025E6E5 /* ReceiverView.swift in Sources */,
 				A3817E292BFEF5E70025E6E5 /* TabButton.swift in Sources */,
 				A3817E072BFEE8310025E6E5 /* StartView.swift in Sources */,
+				A36257842C022D22005268FC /* OnboardDeviceView.swift in Sources */,
+				A362578F2C024ADA005268FC /* MorseGuideView.swift in Sources */,
+				A362578A2C024A9D005268FC /* GestureSuccessView.swift in Sources */,
+				A36257882C024A7C005268FC /* GestureTrainingView.swift in Sources */,
 				A3817E222BFEF0B80025E6E5 /* TransmitterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
