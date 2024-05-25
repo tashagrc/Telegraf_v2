@@ -35,11 +35,11 @@ struct HeaderView: View {
     var body: some View {
         VStack(spacing: 14) {
             Text("Telegraf")
-                .font(.custom(Constant.italic_bold.rawValue, size: 56))
+                .font(.custom(FontName.italic_bold.rawValue, size: 56))
                 .foregroundColor(Color("Red"))
             
             Text("Chat Like It's the 1800s!")
-                .font(.custom(Constant.regular_light.rawValue, size: 16))
+                .font(.custom(FontName.regular_light.rawValue, size: 16))
                 .foregroundColor(Color("Cream"))
         }
     }
@@ -50,7 +50,7 @@ struct NavigationButtons: View {
         VStack(spacing: 28) {
             NavigationLink(destination: PlaygroundView()) {
                 Text("Onboard")
-                    .font(.custom(Constant.regular_light.rawValue, size: 32))
+                    .font(.custom(FontName.regular_light.rawValue, size: 32))
                     .foregroundColor(Color("Red"))
                     .padding(.horizontal, 80)
                     .padding(.vertical, 10)
@@ -60,9 +60,9 @@ struct NavigationButtons: View {
                     )
             }
             
-            NavigationLink(destination: PlaygroundView()) {
+            NavigationLink(destination: StartView()) {
                 Text("Go to playground")
-                    .font(.custom(Constant.regular_light.rawValue, size: 16))
+                    .font(.custom(FontName.regular_light.rawValue, size: 16))
                     .foregroundColor(Color("Cream"))
                     .underline()
             }

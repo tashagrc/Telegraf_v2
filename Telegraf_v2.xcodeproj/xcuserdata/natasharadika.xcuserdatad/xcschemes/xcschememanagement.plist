@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Telegraf_v2 1.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Telegraf_v2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A3817DD32BFEE7A00025E6E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3817DE42BFEE7A10025E6E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3817DEE2BFEE7A10025E6E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

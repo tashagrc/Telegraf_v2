@@ -7,12 +7,32 @@
 
 import SwiftUI
 
-struct ReceiverView: View {
+struct ReceiverView : View {
+    @EnvironmentObject var rpsSession: TelegrafMultipeerSession
+    @State var receiveMessage: String = ""
+    @State var messageList: [String] = []
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Receiver")
+                    .font(.largeTitle)
+                    .padding()
+
+            List(messageList, id: \.self) { message in
+                Text(message)
+            }
+
+            Spacer()
+
+
+            Button("Add Message") {
+                messageList.append(rpsSession.receivedMessage)
+            }
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(8)
+        }
+        .padding()
     }
 }
 
-#Preview {
-    ReceiverView()
-}

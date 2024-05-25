@@ -8,30 +8,27 @@
 import SwiftUI
 
 struct StartView: View {
-    @State var rpsSession: RPSMultipeerSession?
-    @State var currentView: Int = 0
-    @State var username = ""
+    @State private var rpsSession: TelegrafMultipeerSession?
+    @State private var username = ""
+    @State private var isSessionStarted = false
+
     var body: some View {
-        switch currentView {
-        case 1:
-            PairView(currentView: $currentView)
-                .environmentObject(rpsSession!)
-        default:
-            startViewBody
+        Group {
+            if isSessionStarted, let rpsSession = rpsSession {
+                PairView().environmentObject(rpsSession)
+            } else {
+                startViewBody
+            }
         }
     }
-    
+
     var startViewBody: some View {
         VStack {
             Spacer()
-            Image(systemName: "scissors.circle.fill")
-                .resizable()
-                .foregroundColor(.accentColor)
-                .frame(width: 200, height: 200)
-            Text("💥RPS💥")
+            Text("Enter name")
                 .fontWeight(.heavy)
                 .font(.largeTitle)
-            Text("Enter a nickname below. Choose something your friend will recognize!")
+            Text("What's your name?")
                 .font(.caption2)
                 .fontWeight(.semibold)
                 .padding(.horizontal, 40)
@@ -41,18 +38,21 @@ struct StartView: View {
                 .padding(.bottom, 24)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             Button("Continue →") {
-                rpsSession = RPSMultipeerSession(username: username)
-                currentView = 1
-            }.buttonStyle(BorderlessButtonStyle())
-                .padding(.horizontal, 30)
-                .padding(.vertical, 15)
-                .foregroundColor(.white)
-                .background(Color.accentColor)
-                .cornerRadius(12)
-                .disabled(username.isEmpty ? true : false)
-                
-
+                rpsSession = TelegrafMultipeerSession(username: username)
+                isSessionStarted = true
+            }
+            .buttonStyle(BorderlessButtonStyle())
+            .padding(.horizontal, 30)
+            .padding(.vertical, 15)
+            .foregroundColor(.white)
+            .background(Color.accentColor)
+            .cornerRadius(12)
+            .disabled(username.isEmpty)
             Spacer()
         }
     }
+}
+
+#Preview {
+    StartView()
 }

@@ -8,19 +8,6 @@
 import MultipeerConnectivity
 import os
 
-enum Move: String, CaseIterable, CustomStringConvertible {
-    case rock, paper, scissors, unknown
-    
-    var description : String {
-        switch self {
-        case .rock: return "Rock"
-        case .paper: return "Paper"
-        case .scissors: return "Scissors"
-        default: return "Thinking"
-        }
-      }
-}
-
 class TelegrafMultipeerSession: NSObject, ObservableObject {
     private let serviceType = "rps-service"
     private var myPeerID: MCPeerID
@@ -32,7 +19,7 @@ class TelegrafMultipeerSession: NSObject, ObservableObject {
     private let log = Logger()
     
     @Published var availablePeers: [MCPeerID] = []
-    @Published var receivedMove: Move = .unknown
+    @Published var receivedMessage: String = ""
     @Published var recvdInvite: Bool = false
     @Published var recvdInviteFrom: MCPeerID? = nil
     @Published var paired: Bool = false
@@ -60,11 +47,10 @@ class TelegrafMultipeerSession: NSObject, ObservableObject {
         serviceBrowser.stopBrowsingForPeers()
     }
     
-    func send(move: Move) {
+    func send(message: String) {
         if !session.connectedPeers.isEmpty {
-            log.info("sendMove: \(String(describing: move)) to \(self.session.connectedPeers[0].displayName)")
             do {
-                try session.send(move.rawValue.data(using: .utf8)!, toPeers: session.connectedPeers, with: .reliable)
+                try session.send(message.data(using: .utf8)!, toPeers: session.connectedPeers, with: .reliable)
             } catch {
                 log.error("Error sending: \(String(describing: error))")
             }
@@ -148,11 +134,11 @@ extension TelegrafMultipeerSession: MCSessionDelegate {
     }
     
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        if let string = String(data: data, encoding: .utf8), let move = Move(rawValue: string) {
+        if let string = String(data: data, encoding: .utf8) {
             log.info("didReceive move \(string)")
             // We received a move from the opponent, tell the GameView
             DispatchQueue.main.async {
-                self.receivedMove = move
+                self.receivedMessage = string
             }
         } else {
             log.info("didReceive invalid value \(data.count) bytes")

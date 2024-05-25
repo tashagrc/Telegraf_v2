@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		A3817DD82BFEE7A00025E6E5 /* Telegraf_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817DD72BFEE7A00025E6E5 /* Telegraf_v2App.swift */; };
-		A3817DDA2BFEE7A00025E6E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817DD92BFEE7A00025E6E5 /* ContentView.swift */; };
 		A3817DDC2BFEE7A10025E6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3817DDB2BFEE7A10025E6E5 /* Assets.xcassets */; };
 		A3817DE02BFEE7A10025E6E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3817DDF2BFEE7A10025E6E5 /* Preview Assets.xcassets */; };
 		A3817DEA2BFEE7A10025E6E5 /* Telegraf_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817DE92BFEE7A10025E6E5 /* Telegraf_v2Tests.swift */; };
 		A3817DF42BFEE7A10025E6E5 /* Telegraf_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817DF32BFEE7A10025E6E5 /* Telegraf_v2UITests.swift */; };
 		A3817DF62BFEE7A10025E6E5 /* Telegraf_v2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817DF52BFEE7A10025E6E5 /* Telegraf_v2UITestsLaunchTests.swift */; };
+		A3817E032BFEE8280025E6E5 /* TelegrafMultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E022BFEE8280025E6E5 /* TelegrafMultipeerSession.swift */; };
+		A3817E072BFEE8310025E6E5 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E042BFEE8310025E6E5 /* StartView.swift */; };
+		A3817E082BFEE8310025E6E5 /* PairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E052BFEE8310025E6E5 /* PairView.swift */; };
+		A3817E092BFEE8310025E6E5 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E062BFEE8310025E6E5 /* GameView.swift */; };
+		A3817E0C2BFEEA0D0025E6E5 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E0A2BFEEA0D0025E6E5 /* LandingView.swift */; };
+		A3817E0D2BFEEA0D0025E6E5 /* PlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E0B2BFEEA0D0025E6E5 /* PlaygroundView.swift */; };
+		A3817E0F2BFEEA120025E6E5 /* FontName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E0E2BFEEA120025E6E5 /* FontName.swift */; };
+		A3817E152BFEEB3F0025E6E5 /* Lora-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3817E122BFEEA200025E6E5 /* Lora-Italic-VariableFont_wght.ttf */; };
+		A3817E162BFEEB420025E6E5 /* Lora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3817E112BFEEA200025E6E5 /* Lora-VariableFont_wght.ttf */; };
+		A3817E172BFEEBAC0025E6E5 /* Lora-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3817E122BFEEA200025E6E5 /* Lora-Italic-VariableFont_wght.ttf */; };
+		A3817E182BFEEBAC0025E6E5 /* Lora-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3817E122BFEEA200025E6E5 /* Lora-Italic-VariableFont_wght.ttf */; };
+		A3817E192BFEEBAF0025E6E5 /* Lora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3817E112BFEEA200025E6E5 /* Lora-VariableFont_wght.ttf */; };
+		A3817E1A2BFEEBB00025E6E5 /* Lora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3817E112BFEEA200025E6E5 /* Lora-VariableFont_wght.ttf */; };
+		A3817E222BFEF0B80025E6E5 /* TransmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E212BFEF0B80025E6E5 /* TransmitterView.swift */; };
+		A3817E242BFEF11F0025E6E5 /* ReceiverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E232BFEF11F0025E6E5 /* ReceiverView.swift */; };
+		A3817E262BFEF1500025E6E5 /* CustomTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E252BFEF1500025E6E5 /* CustomTabButton.swift */; };
+		A3817E292BFEF5E70025E6E5 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E282BFEF5E70025E6E5 /* TabButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +52,6 @@
 /* Begin PBXFileReference section */
 		A3817DD42BFEE7A00025E6E5 /* Telegraf_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegraf_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3817DD72BFEE7A00025E6E5 /* Telegraf_v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telegraf_v2App.swift; sourceTree = "<group>"; };
-		A3817DD92BFEE7A00025E6E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A3817DDB2BFEE7A10025E6E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3817DDD2BFEE7A10025E6E5 /* Telegraf_v2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Telegraf_v2.entitlements; sourceTree = "<group>"; };
 		A3817DDF2BFEE7A10025E6E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +60,20 @@
 		A3817DEF2BFEE7A10025E6E5 /* Telegraf_v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Telegraf_v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3817DF32BFEE7A10025E6E5 /* Telegraf_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telegraf_v2UITests.swift; sourceTree = "<group>"; };
 		A3817DF52BFEE7A10025E6E5 /* Telegraf_v2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telegraf_v2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3817E022BFEE8280025E6E5 /* TelegrafMultipeerSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelegrafMultipeerSession.swift; sourceTree = "<group>"; };
+		A3817E042BFEE8310025E6E5 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		A3817E052BFEE8310025E6E5 /* PairView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairView.swift; sourceTree = "<group>"; };
+		A3817E062BFEE8310025E6E5 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A3817E0A2BFEEA0D0025E6E5 /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		A3817E0B2BFEEA0D0025E6E5 /* PlaygroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
+		A3817E0E2BFEEA120025E6E5 /* FontName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontName.swift; sourceTree = "<group>"; };
+		A3817E112BFEEA200025E6E5 /* Lora-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		A3817E122BFEEA200025E6E5 /* Lora-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		A3817E1B2BFEED0D0025E6E5 /* Telegraf-v2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Telegraf-v2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A3817E212BFEF0B80025E6E5 /* TransmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmitterView.swift; sourceTree = "<group>"; };
+		A3817E232BFEF11F0025E6E5 /* ReceiverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverView.swift; sourceTree = "<group>"; };
+		A3817E252BFEF1500025E6E5 /* CustomTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabButton.swift; sourceTree = "<group>"; };
+		A3817E282BFEF5E70025E6E5 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +124,15 @@
 		A3817DD62BFEE7A00025E6E5 /* Telegraf_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				A3817E272BFEF19C0025E6E5 /* SubView */,
+				A3817E202BFEEE290025E6E5 /* Communication */,
+				A3817E142BFEEAE50025E6E5 /* View */,
+				A3817E132BFEEAAC0025E6E5 /* Util */,
+				A3817E102BFEEA160025E6E5 /* Font */,
 				A3817DD72BFEE7A00025E6E5 /* Telegraf_v2App.swift */,
-				A3817DD92BFEE7A00025E6E5 /* ContentView.swift */,
 				A3817DDB2BFEE7A10025E6E5 /* Assets.xcassets */,
 				A3817DDD2BFEE7A10025E6E5 /* Telegraf_v2.entitlements */,
+				A3817E1B2BFEED0D0025E6E5 /* Telegraf-v2-Info.plist */,
 				A3817DDE2BFEE7A10025E6E5 /* Preview Content */,
 			);
 			path = Telegraf_v2;
@@ -127,6 +161,78 @@
 				A3817DF52BFEE7A10025E6E5 /* Telegraf_v2UITestsLaunchTests.swift */,
 			);
 			path = Telegraf_v2UITests;
+			sourceTree = "<group>";
+		};
+		A3817E102BFEEA160025E6E5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A3817E122BFEEA200025E6E5 /* Lora-Italic-VariableFont_wght.ttf */,
+				A3817E112BFEEA200025E6E5 /* Lora-VariableFont_wght.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		A3817E132BFEEAAC0025E6E5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A3817E0E2BFEEA120025E6E5 /* FontName.swift */,
+				A3817E282BFEF5E70025E6E5 /* TabButton.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A3817E142BFEEAE50025E6E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3817E1E2BFEEDE10025E6E5 /* Onboard */,
+				A3817E1D2BFEEDDA0025E6E5 /* Start */,
+				A3817E1C2BFEEDCE0025E6E5 /* Playground */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3817E1C2BFEEDCE0025E6E5 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				A3817E0B2BFEEA0D0025E6E5 /* PlaygroundView.swift */,
+				A3817E212BFEF0B80025E6E5 /* TransmitterView.swift */,
+				A3817E232BFEF11F0025E6E5 /* ReceiverView.swift */,
+				A3817E052BFEE8310025E6E5 /* PairView.swift */,
+				A3817E062BFEE8310025E6E5 /* GameView.swift */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		A3817E1D2BFEEDDA0025E6E5 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				A3817E0A2BFEEA0D0025E6E5 /* LandingView.swift */,
+				A3817E042BFEE8310025E6E5 /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		A3817E1E2BFEEDE10025E6E5 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		A3817E202BFEEE290025E6E5 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				A3817E022BFEE8280025E6E5 /* TelegrafMultipeerSession.swift */,
+			);
+			path = Communication;
+			sourceTree = "<group>";
+		};
+		A3817E272BFEF19C0025E6E5 /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				A3817E252BFEF1500025E6E5 /* CustomTabButton.swift */,
+			);
+			path = SubView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +340,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3817DE02BFEE7A10025E6E5 /* Preview Assets.xcassets in Resources */,
+				A3817E152BFEEB3F0025E6E5 /* Lora-Italic-VariableFont_wght.ttf in Resources */,
 				A3817DDC2BFEE7A10025E6E5 /* Assets.xcassets in Resources */,
+				A3817E162BFEEB420025E6E5 /* Lora-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +350,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3817E172BFEEBAC0025E6E5 /* Lora-Italic-VariableFont_wght.ttf in Resources */,
+				A3817E192BFEEBAF0025E6E5 /* Lora-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +359,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3817E182BFEEBAC0025E6E5 /* Lora-Italic-VariableFont_wght.ttf in Resources */,
+				A3817E1A2BFEEBB00025E6E5 /* Lora-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +371,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3817DDA2BFEE7A00025E6E5 /* ContentView.swift in Sources */,
+				A3817E262BFEF1500025E6E5 /* CustomTabButton.swift in Sources */,
+				A3817E0D2BFEEA0D0025E6E5 /* PlaygroundView.swift in Sources */,
+				A3817E082BFEE8310025E6E5 /* PairView.swift in Sources */,
+				A3817E032BFEE8280025E6E5 /* TelegrafMultipeerSession.swift in Sources */,
+				A3817E0F2BFEEA120025E6E5 /* FontName.swift in Sources */,
+				A3817E0C2BFEEA0D0025E6E5 /* LandingView.swift in Sources */,
 				A3817DD82BFEE7A00025E6E5 /* Telegraf_v2App.swift in Sources */,
+				A3817E092BFEE8310025E6E5 /* GameView.swift in Sources */,
+				A3817E242BFEF11F0025E6E5 /* ReceiverView.swift in Sources */,
+				A3817E292BFEF5E70025E6E5 /* TabButton.swift in Sources */,
+				A3817E072BFEE8310025E6E5 /* StartView.swift in Sources */,
+				A3817E222BFEF0B80025E6E5 /* TransmitterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +546,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Telegraf-v2-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -434,10 +557,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "natasharadika.Telegraf-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,6 +585,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Telegraf-v2-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -472,10 +596,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "natasharadika.Telegraf-v2";
 				PRODUCT_NAME = "$(TARGET_NAME)";

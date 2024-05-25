@@ -9,9 +9,8 @@ import SwiftUI
 import os
 
 struct PairView: View {
-    @EnvironmentObject var rpsSession: RPSMultipeerSession
+    @EnvironmentObject var rpsSession: TelegrafMultipeerSession
     
-    @Binding var currentView: Int
     var logger = Logger()
         
     var body: some View {
@@ -36,8 +35,9 @@ struct PairView: View {
                 }
             }
         } else {
-            GameView(currentView: $currentView)
+            PlaygroundView()
                 .environmentObject(rpsSession)
         }
     }
 }
+
