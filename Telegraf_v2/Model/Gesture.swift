@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct Gestures: Identifiable {
+    let id = UUID()
+    let name: String
+}
+
+struct GestureTitle: Identifiable {
+    let id = UUID()
+    let title: String
+    let items: [Gestures]
+}

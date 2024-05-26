@@ -12,6 +12,8 @@
 		A343B59B2C0311E000861A1B /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343B59A2C0311E000861A1B /* LinkView.swift */; };
 		A343B59F2C031C1800861A1B /* OnboardDeviceView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343B59E2C031C1800861A1B /* OnboardDeviceView2.swift */; };
 		A343B5A12C03271100861A1B /* OnboardDeviceView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343B5A02C03271100861A1B /* OnboardDeviceView3.swift */; };
+		A343B5A62C03651800861A1B /* Morse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343B5A52C03651800861A1B /* Morse.swift */; };
+		A343B5A82C036CA900861A1B /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343B5A72C036CA900861A1B /* Gesture.swift */; };
 		A36257842C022D22005268FC /* OnboardDeviceView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257832C022D22005268FC /* OnboardDeviceView1.swift */; };
 		A36257862C024A60005268FC /* GestureStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257852C024A60005268FC /* GestureStartView.swift */; };
 		A36257882C024A7C005268FC /* GestureTrainingView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257872C024A7B005268FC /* GestureTrainingView1.swift */; };
@@ -66,6 +68,8 @@
 		A343B59A2C0311E000861A1B /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		A343B59E2C031C1800861A1B /* OnboardDeviceView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardDeviceView2.swift; sourceTree = "<group>"; };
 		A343B5A02C03271100861A1B /* OnboardDeviceView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardDeviceView3.swift; sourceTree = "<group>"; };
+		A343B5A52C03651800861A1B /* Morse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morse.swift; sourceTree = "<group>"; };
+		A343B5A72C036CA900861A1B /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
 		A36257832C022D22005268FC /* OnboardDeviceView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardDeviceView1.swift; sourceTree = "<group>"; };
 		A36257852C024A60005268FC /* GestureStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureStartView.swift; sourceTree = "<group>"; };
 		A36257872C024A7B005268FC /* GestureTrainingView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTrainingView1.swift; sourceTree = "<group>"; };
@@ -143,6 +147,15 @@
 			path = "Onboard Gesture";
 			sourceTree = "<group>";
 		};
+		A343B5A42C03650500861A1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A343B5A52C03651800861A1B /* Morse.swift */,
+				A343B5A72C036CA900861A1B /* Gesture.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A362578D2C024AC5005268FC /* Guide */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +188,7 @@
 		A3817DD62BFEE7A00025E6E5 /* Telegraf_v2 */ = {
 			isa = PBXGroup;
 			children = (
+				A343B5A42C03650500861A1B /* Model */,
 				A3817E202BFEEE290025E6E5 /* Communication */,
 				A3817E142BFEEAE50025E6E5 /* View */,
 				A3817E132BFEEAAC0025E6E5 /* Util */,
@@ -440,6 +454,7 @@
 				A3817E0F2BFEEA120025E6E5 /* FontName.swift in Sources */,
 				A3817E0C2BFEEA0D0025E6E5 /* LandingView.swift in Sources */,
 				A3817DD82BFEE7A00025E6E5 /* Telegraf_v2App.swift in Sources */,
+				A343B5A62C03651800861A1B /* Morse.swift in Sources */,
 				A3817E242BFEF11F0025E6E5 /* ReceiverView.swift in Sources */,
 				A3817E292BFEF5E70025E6E5 /* TabButton.swift in Sources */,
 				A3817E072BFEE8310025E6E5 /* StartView.swift in Sources */,
@@ -449,6 +464,7 @@
 				A362578F2C024ADA005268FC /* MorseGuideView.swift in Sources */,
 				A362578A2C024A9D005268FC /* GestureSuccessView.swift in Sources */,
 				A36257882C024A7C005268FC /* GestureTrainingView1.swift in Sources */,
+				A343B5A82C036CA900861A1B /* Gesture.swift in Sources */,
 				A343B59B2C0311E000861A1B /* LinkView.swift in Sources */,
 				A3817E222BFEF0B80025E6E5 /* TransmitterView.swift in Sources */,
 			);

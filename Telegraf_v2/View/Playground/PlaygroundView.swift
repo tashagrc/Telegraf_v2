@@ -9,9 +9,7 @@ import SwiftUI
 
 struct PlaygroundView: View {
     // multipeer
-    
-    // tab
-    @State var selectedTab = TabButton.TransmitterTab
+    @EnvironmentObject var rpsSession: TelegrafMultipeerSession
     
     // morse code
     @State private var morseCode: String = ""
@@ -24,28 +22,8 @@ struct PlaygroundView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                // tab
-                HStack() {
-                    
-                    CustomTabButton(text: "Transmitter", isSelected: selectedTab == .TransmitterTab) {
-                        self.selectedTab = .TransmitterTab
-                    }
-
-                    CustomTabButton(text: "Receiver", isSelected: selectedTab == .ReceiverTab) {
-                        self.selectedTab = .ReceiverTab
-                    }
-                    
-                }
-                .padding(.top, 20)
-                .padding(.bottom, 10)
-                
-                if selectedTab == .TransmitterTab {
-                    TransmitterView(morseCode: $morseCode, morseLetter: $morseLetter, lastSwipeDownTime: $lastSwipeDownTime, swipeDownCount: $swipeDownCount)
-                } else if selectedTab == .ReceiverTab {
-                    ReceiverView()
-                }
-                Spacer()
-                 
+                ReceiverView()
+                TransmitterView(morseCode: $morseCode, morseLetter: $morseLetter, lastSwipeDownTime: $lastSwipeDownTime, swipeDownCount: $swipeDownCount)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {
@@ -56,32 +34,27 @@ struct PlaygroundView: View {
                 ToolbarItem(placement: .topBarLeading) {
                         VStack {
                             Text("Playground")
-                                .font(.custom(FontName.regular_light.rawValue, size: 36))
+                                .font(.custom(FontName.regular_light.rawValue, size: FontSize.size_bigtext.rawValue))
                                 .foregroundColor(Color("Cream"))
                         }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Menu {
-                        Button {
-                            
-                        } label: {
+                        NavigationLink(destination: GestureRecapView()) {
                             Label("Gestures Recap", systemImage: "hand.tap")
                         }
                         
-                        Button {
-                            
-                        } label: {
+                        NavigationLink(destination: MorseGuideView()) {
                             Label("Morse Guide", systemImage: "book")
                         }
                         
-                        Button {
-                            
-                        } label: {
+                        
+                        NavigationLink(destination: LandingView()) {
                             Label("Repeat Onboarding", systemImage: "restart.circle")
                         }
                         
                         Button {
-                            
+                            rpsSession.session.disconnect()
                         } label: {
                             Label("Disconnect Session", systemImage: "rectangle.portrait.and.arrow.forward")
                         }
@@ -93,7 +66,7 @@ struct PlaygroundView: View {
                 }
                 
             }
-         }.navigationBarBackButtonHidden(true)
+        }.navigationBarBackButtonHidden(true).accentColor(.white)
         
         
         
@@ -101,6 +74,9 @@ struct PlaygroundView: View {
     
 }
 
+#Preview {
+    PlaygroundView()
+}
 
 
 

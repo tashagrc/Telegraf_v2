@@ -9,7 +9,40 @@ import SwiftUI
 
 struct GestureSuccessView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color("Black")
+                .ignoresSafeArea()
+            
+            VStack(spacing: 250) {
+                HStack {
+                    Spacer()
+                    NavigationLink(destination: StartView(), label: {
+                        LinkView(linkText: "Skip onboarding", colorText: "LightGray")
+                    })
+                }.padding(.trailing, 20)
+                
+                VStack(spacing: 80) {
+                    
+                    // combine 2 text in one
+                    Text("Well done! \nYou just wrote an .-")
+                            .font(.custom(FontName.regular_light.rawValue, size: FontSize.size_bigtext.rawValue))
+                            .foregroundColor(Color("Cream"))
+                            .frame(maxWidth: 450)
+                            .multilineTextAlignment(.center)
+                    Text("A")
+                        .font(.custom(FontName.regular_bold.rawValue, size: FontSize.size_superbigtext.rawValue))
+                            .foregroundColor(Color("Red"))
+                            .multilineTextAlignment(.center)
+                    
+                }
+                
+                
+                NavigationLink(destination: MorseGuideView(), label: {
+                    ButtonView(buttonText: "Learn Morse Code")
+                })
+            }
+            .padding()
+        }
     }
 }
 
