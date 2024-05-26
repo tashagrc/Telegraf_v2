@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+enum FontSize : CGFloat {
+    case size_logo = 80
+    case size_bigtext = 32
+    case size_regtext = 24
+}

@@ -19,7 +19,7 @@ struct TransmitterView : View {
             
             ZStack {
                 Rectangle()
-                    .frame(width: 350, height: 610)
+                    .frame(width: 700, height: 400)
                     .foregroundColor(Color("Gray"))
                     .cornerRadius(20)
                     .gesture(
@@ -134,3 +134,15 @@ struct TransmitterView : View {
     
 }
 
+
+struct TransmitterView_Previews: PreviewProvider {
+    static var previews: some View {
+        TransmitterView(
+            morseCode: .constant("Sample Morse Code"),
+            morseLetter: .constant("Sample Morse Letter"),
+            lastSwipeDownTime: .constant(nil),
+            swipeDownCount: .constant(0)
+        )
+        .environmentObject(TelegrafMultipeerSession(username: "nata"))
+    }
+}

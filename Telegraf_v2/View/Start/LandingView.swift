@@ -20,53 +20,32 @@ struct LandingView: View {
                 Color("Black")
                     .ignoresSafeArea()
                 
-                VStack(spacing: 120) {
-                    HeaderView()
-                    Image("telegraf_landing")
-                    NavigationButtons()
+                VStack(spacing: 200) {
+                    VStack(spacing: 14) {
+                        Text("Telegraf")
+                            .font(.custom(FontName.italic_bold.rawValue, size: FontSize.size_logo.rawValue))
+                            .foregroundColor(Color("Red"))
+                        
+                        Text("Chat Like It's the 1800s!")
+                            .font(.custom(FontName.regular_light.rawValue, size: FontSize.size_regtext.rawValue))
+                            .foregroundColor(Color("Cream"))
+                    }
+                    Image("telegraf_landing").resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 400)
+                    VStack(spacing: 28) {
+                        NavigationLink(destination: OnboardDeviceView1()) {
+                            ButtonView(buttonText: "Onboard")
+                        }
+                        
+                        NavigationLink(destination: StartView()) {
+                            LinkView(linkText: "Go to playground", colorText: "Cream")
+                        }
+                    }
                 }
                 .padding()
             }
-        }
-    }
-}
-
-struct HeaderView: View {
-    var body: some View {
-        VStack(spacing: 14) {
-            Text("Telegraf")
-                .font(.custom(FontName.italic_bold.rawValue, size: 56))
-                .foregroundColor(Color("Red"))
-            
-            Text("Chat Like It's the 1800s!")
-                .font(.custom(FontName.regular_light.rawValue, size: 16))
-                .foregroundColor(Color("Cream"))
-        }
-    }
-}
-
-struct NavigationButtons: View {
-    var body: some View {
-        VStack(spacing: 28) {
-            NavigationLink(destination: PlaygroundView()) {
-                Text("Onboard")
-                    .font(.custom(FontName.regular_light.rawValue, size: 32))
-                    .foregroundColor(Color("Red"))
-                    .padding(.horizontal, 80)
-                    .padding(.vertical, 10)
-                    .background(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color("Red"), lineWidth: 2)
-                    )
-            }
-            
-            NavigationLink(destination: StartView()) {
-                Text("Go to playground")
-                    .font(.custom(FontName.regular_light.rawValue, size: 16))
-                    .foregroundColor(Color("Cream"))
-                    .underline()
-            }
-        }
+        }.accentColor(.white)
     }
 }
 

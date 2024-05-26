@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct LinkView: View {
+    let linkText: String
+    let colorText: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(linkText)
+            .font(.custom(FontName.regular_light.rawValue, size: FontSize.size_regtext.rawValue))
+            .foregroundColor(Color(colorText))
+            .underline()
     }
 }
 
 #Preview {
-    LinkView()
+    LinkView(linkText: "Go to playground", colorText: "Cream")
 }

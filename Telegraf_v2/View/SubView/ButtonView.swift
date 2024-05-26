@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct ButtonView: View {
+    let buttonText: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(buttonText)
+            .font(.custom(FontName.regular_light.rawValue, size: FontSize.size_bigtext.rawValue))
+            .foregroundColor(Color("Red"))
+            .padding(.horizontal, 80)
+            .padding(.vertical, 10)
+            .background(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color("Red"), lineWidth: 2)
+            )
     }
 }
 
 #Preview {
-    ButtonView()
+    ButtonView(buttonText: "Onboard")
 }

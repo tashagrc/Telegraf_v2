@@ -39,7 +39,7 @@ struct GestureStartView: View {
                 }
                 
                 
-                NavigationLink(destination: OnboardDeviceView2(), label: {
+                NavigationLink(destination: GestureTrainingView1(), label: {
                     ButtonView(buttonText: "Learn Gesture")
                 })
             }

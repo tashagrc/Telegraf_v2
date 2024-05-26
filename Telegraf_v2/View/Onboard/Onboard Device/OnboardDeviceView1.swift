@@ -33,7 +33,7 @@ struct OnboardDeviceView1: View {
                         +
                         Text("iPhone, iPad, and Mac.")
                             .font(.custom(FontName.regular_light.rawValue, size: FontSize.size_bigtext.rawValue))
-                            .foregroundColor(Color.red)
+                            .foregroundColor(Color("Red"))
                     }
                     .frame(maxWidth: 450)
                     .multilineTextAlignment(.center)
