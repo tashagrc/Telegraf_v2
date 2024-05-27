@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GestureStartView: View {
+    @StateObject private var speech = SpeechViewModel()
     var body: some View {
         ZStack {
             Color("Black")
@@ -44,6 +45,10 @@ struct GestureStartView: View {
                 })
             }
             .padding()
+        }
+        .onAppear {
+            let textToSpeak = "Telegraphs use Morse Code for messaging. To write Morse Code, simply use gestures!"
+            speech.speak(textToSpeak)
         }
     }
 }

@@ -14,6 +14,8 @@ struct TransmitterView : View {
     @Binding var lastSwipeDownTime: Date?
     @Binding var swipeDownCount: Int
     
+    let soundPlayer = SoundPlayer()
+    
     var body: some View {
         VStack {
             
@@ -24,6 +26,7 @@ struct TransmitterView : View {
                     .cornerRadius(20)
                     .gesture(
                         TapGesture().onEnded {
+                            soundPlayer.playSound(sound: "dot", type: "mp3")
                             morseLetter.append(".")
                         }
                     )
@@ -37,6 +40,7 @@ struct TransmitterView : View {
                                 if abs(horizontalAmount) > abs(verticalAmount) {
                                     if horizontalAmount > 0 {
                                         // swipe right
+                                        soundPlayer.playSound(sound: "dash", type: "mp3")
                                         morseLetter.append("-")
                                     } else {
                                         // swipe left delete 1 karakter di morse letter
@@ -63,6 +67,9 @@ struct TransmitterView : View {
                                         morseLetter = ""
                                         morseCode = ""
                                         print("message sended")
+                                        
+                                        // show it on receiver view
+                                        
                                     }
                                 }
                                 
@@ -74,22 +81,14 @@ struct TransmitterView : View {
                     Text(morseCode)
                         .font(.custom(FontName.regular_light.rawValue, size: 36))
                         .foregroundStyle(Color("Cream"))
-                        .padding(10)
-                        .frame(maxWidth: 340, alignment: .leading)
+                        .padding(10).padding(.leading, 20)
+                        .frame(maxWidth: 600, alignment: .leading)
                 }
-                .frame(width: 350, height: 610, alignment: .topLeading)
+                .frame(width: 700, height: 400, alignment: .topLeading)
                 .padding(.top, 10)
             }
             
             
-            Button {
-                
-            } label: {
-                Text("Write something for me")
-                    .font(.custom(FontName.regular_light.rawValue, size: 16))
-                    .foregroundStyle(Color("Cream"))
-                    .underline()
-            }
         }
     }
     
@@ -121,7 +120,7 @@ struct TransmitterView : View {
         // kalo swipe 2 kali
         if swipeDownCount == 2 {
             if !morseCode.isEmpty {
-                morseCode += "/"
+                morseCode += "|"
             }
             
             swipeDownCount = 0

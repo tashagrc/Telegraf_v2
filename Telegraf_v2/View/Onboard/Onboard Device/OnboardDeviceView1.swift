@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct OnboardDeviceView1: View {
+    @StateObject private var speech = SpeechViewModel()
+    
     var body: some View {
         ZStack {
             Color("Black")
@@ -45,6 +47,10 @@ struct OnboardDeviceView1: View {
                 })
             }
             .padding()
+        }
+        .onAppear {
+            let textToSpeak = "Works on iPhone, iPad, and Mac."
+            speech.speak(textToSpeak)
         }
     }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OnboardDeviceView3: View {
+    @StateObject private var speech = SpeechViewModel()
     var body: some View {
         ZStack {
             Color("Black")
@@ -48,6 +49,10 @@ struct OnboardDeviceView3: View {
                 })
             }
             .padding()
+        }
+        .onAppear {
+            let textToSpeak = "Chat seamlessly over Wi-fi or Bluetooth when devices are nearby."
+            speech.speak(textToSpeak)
         }
     }
 }

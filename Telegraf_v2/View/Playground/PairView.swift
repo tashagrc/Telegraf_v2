@@ -21,7 +21,7 @@ struct PairView: View {
                         rpsSession.serviceBrowser.invitePeer(peer, to: rpsSession.session, withContext: nil, timeout: 30)
                     }
                 }
-            }
+            }.accentColor(.black)
             .alert("Received an invite from \(rpsSession.recvdInviteFrom?.displayName ?? "ERR")!", isPresented: $rpsSession.recvdInvite) {
                 Button("Accept invite") {
                     if (rpsSession.invitationHandler != nil) {

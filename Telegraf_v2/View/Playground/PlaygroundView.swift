@@ -24,6 +24,14 @@ struct PlaygroundView: View {
             VStack {
                 ReceiverView()
                 TransmitterView(morseCode: $morseCode, morseLetter: $morseLetter, lastSwipeDownTime: $lastSwipeDownTime, swipeDownCount: $swipeDownCount)
+                Button {
+                    morseCode = ".-- .... .- - | .... .- - .... | --. --- -.. | .-- .-. --- ..- --. .... - ..--.."
+                } label: {
+                    Text("Write something for me")
+                        .font(.custom(FontName.regular_light.rawValue, size: FontSize.size_regtext.rawValue))
+                        .foregroundStyle(Color("Cream"))
+                        .underline()
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background {

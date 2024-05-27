@@ -45,7 +45,7 @@ struct StartView: View {
             .padding(.horizontal, 30)
             .padding(.vertical, 15)
             .foregroundColor(.white)
-            .background(Color.accentColor)
+            .background(Color.black)
             .cornerRadius(12)
             .disabled(username.isEmpty)
             Spacer()

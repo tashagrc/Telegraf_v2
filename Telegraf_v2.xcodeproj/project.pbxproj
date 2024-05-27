@@ -14,6 +14,7 @@
 		A343B5A12C03271100861A1B /* OnboardDeviceView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343B5A02C03271100861A1B /* OnboardDeviceView3.swift */; };
 		A343B5A62C03651800861A1B /* Morse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343B5A52C03651800861A1B /* Morse.swift */; };
 		A343B5A82C036CA900861A1B /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343B5A72C036CA900861A1B /* Gesture.swift */; };
+		A343B5E02C04115600861A1B /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A343B5DF2C04115600861A1B /* SoundPlayer.swift */; };
 		A36257842C022D22005268FC /* OnboardDeviceView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257832C022D22005268FC /* OnboardDeviceView1.swift */; };
 		A36257862C024A60005268FC /* GestureStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257852C024A60005268FC /* GestureStartView.swift */; };
 		A36257882C024A7C005268FC /* GestureTrainingView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257872C024A7B005268FC /* GestureTrainingView1.swift */; };
@@ -21,7 +22,6 @@
 		A362578C2C024ABB005268FC /* FinishOnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362578B2C024ABB005268FC /* FinishOnboardView.swift */; };
 		A362578F2C024ADA005268FC /* MorseGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A362578E2C024ADA005268FC /* MorseGuideView.swift */; };
 		A36257912C024AE8005268FC /* GestureRecapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36257902C024AE8005268FC /* GestureRecapView.swift */; };
-		A3817DD82BFEE7A00025E6E5 /* Telegraf_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817DD72BFEE7A00025E6E5 /* Telegraf_v2App.swift */; };
 		A3817DDC2BFEE7A10025E6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3817DDB2BFEE7A10025E6E5 /* Assets.xcassets */; };
 		A3817DE02BFEE7A10025E6E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3817DDF2BFEE7A10025E6E5 /* Preview Assets.xcassets */; };
 		A3817DEA2BFEE7A10025E6E5 /* Telegraf_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817DE92BFEE7A10025E6E5 /* Telegraf_v2Tests.swift */; };
@@ -43,6 +43,11 @@
 		A3817E242BFEF11F0025E6E5 /* ReceiverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E232BFEF11F0025E6E5 /* ReceiverView.swift */; };
 		A3817E262BFEF1500025E6E5 /* CustomTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E252BFEF1500025E6E5 /* CustomTabButton.swift */; };
 		A3817E292BFEF5E70025E6E5 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3817E282BFEF5E70025E6E5 /* TabButton.swift */; };
+		A3D66CCB2C0414E200792AE8 /* dash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3D66CCA2C0414E200792AE8 /* dash.mp3 */; };
+		A3D66CCD2C0414E700792AE8 /* dot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3D66CCC2C0414E700792AE8 /* dot.mp3 */; };
+		A3D66CCF2C04153000792AE8 /* Telegraf_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D66CCE2C04153000792AE8 /* Telegraf_v2App.swift */; };
+		A3D66CD12C04293E00792AE8 /* SpeechViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D66CD02C04293E00792AE8 /* SpeechViewModel.swift */; };
+		A3D66CD32C046EE500792AE8 /* MorseOnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D66CD22C046EE500792AE8 /* MorseOnboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,7 @@
 		A343B5A02C03271100861A1B /* OnboardDeviceView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardDeviceView3.swift; sourceTree = "<group>"; };
 		A343B5A52C03651800861A1B /* Morse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morse.swift; sourceTree = "<group>"; };
 		A343B5A72C036CA900861A1B /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
+		A343B5DF2C04115600861A1B /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		A36257832C022D22005268FC /* OnboardDeviceView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardDeviceView1.swift; sourceTree = "<group>"; };
 		A36257852C024A60005268FC /* GestureStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureStartView.swift; sourceTree = "<group>"; };
 		A36257872C024A7B005268FC /* GestureTrainingView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTrainingView1.swift; sourceTree = "<group>"; };
@@ -78,7 +84,6 @@
 		A362578E2C024ADA005268FC /* MorseGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseGuideView.swift; sourceTree = "<group>"; };
 		A36257902C024AE8005268FC /* GestureRecapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecapView.swift; sourceTree = "<group>"; };
 		A3817DD42BFEE7A00025E6E5 /* Telegraf_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegraf_v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A3817DD72BFEE7A00025E6E5 /* Telegraf_v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telegraf_v2App.swift; sourceTree = "<group>"; };
 		A3817DDB2BFEE7A10025E6E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3817DDD2BFEE7A10025E6E5 /* Telegraf_v2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Telegraf_v2.entitlements; sourceTree = "<group>"; };
 		A3817DDF2BFEE7A10025E6E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -100,6 +105,11 @@
 		A3817E232BFEF11F0025E6E5 /* ReceiverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverView.swift; sourceTree = "<group>"; };
 		A3817E252BFEF1500025E6E5 /* CustomTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabButton.swift; sourceTree = "<group>"; };
 		A3817E282BFEF5E70025E6E5 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		A3D66CCA2C0414E200792AE8 /* dash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dash.mp3; sourceTree = "<group>"; };
+		A3D66CCC2C0414E700792AE8 /* dot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dot.mp3; sourceTree = "<group>"; };
+		A3D66CCE2C04153000792AE8 /* Telegraf_v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telegraf_v2App.swift; sourceTree = "<group>"; };
+		A3D66CD02C04293E00792AE8 /* SpeechViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewModel.swift; sourceTree = "<group>"; };
+		A3D66CD22C046EE500792AE8 /* MorseOnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorseOnboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +166,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A343B5E12C0414A000861A1B /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				A3D66CCA2C0414E200792AE8 /* dash.mp3 */,
+				A3D66CCC2C0414E700792AE8 /* dot.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		A362578D2C024AC5005268FC /* Guide */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,8 +212,9 @@
 				A3817E142BFEEAE50025E6E5 /* View */,
 				A3817E132BFEEAAC0025E6E5 /* Util */,
 				A3817E102BFEEA160025E6E5 /* Font */,
-				A3817DD72BFEE7A00025E6E5 /* Telegraf_v2App.swift */,
+				A343B5E12C0414A000861A1B /* Sound */,
 				A3817DDB2BFEE7A10025E6E5 /* Assets.xcassets */,
+				A3D66CCE2C04153000792AE8 /* Telegraf_v2App.swift */,
 				A3817DDD2BFEE7A10025E6E5 /* Telegraf_v2.entitlements */,
 				A3817E1B2BFEED0D0025E6E5 /* Telegraf-v2-Info.plist */,
 				A3817DDE2BFEE7A10025E6E5 /* Preview Content */,
@@ -242,6 +262,8 @@
 				A3817E0E2BFEEA120025E6E5 /* FontName.swift */,
 				A3817E282BFEF5E70025E6E5 /* TabButton.swift */,
 				A343B5962C03103B00861A1B /* FontSize.swift */,
+				A343B5DF2C04115600861A1B /* SoundPlayer.swift */,
+				A3D66CD02C04293E00792AE8 /* SpeechViewModel.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -284,6 +306,7 @@
 				A343B5A32C032B7300861A1B /* Onboard Gesture */,
 				A343B5A22C032B5400861A1B /* Onboard Device */,
 				A362578B2C024ABB005268FC /* FinishOnboardView.swift */,
+				A3D66CD22C046EE500792AE8 /* MorseOnboardView.swift */,
 			);
 			path = Onboard;
 			sourceTree = "<group>";
@@ -410,7 +433,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D66CCD2C0414E700792AE8 /* dot.mp3 in Resources */,
 				A3817DE02BFEE7A10025E6E5 /* Preview Assets.xcassets in Resources */,
+				A3D66CCB2C0414E200792AE8 /* dash.mp3 in Resources */,
 				A3817E152BFEEB3F0025E6E5 /* Lora-Italic-VariableFont_wght.ttf in Resources */,
 				A3817DDC2BFEE7A10025E6E5 /* Assets.xcassets in Resources */,
 				A3817E162BFEEB420025E6E5 /* Lora-VariableFont_wght.ttf in Resources */,
@@ -442,6 +467,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A343B5E02C04115600861A1B /* SoundPlayer.swift in Sources */,
+				A3D66CD12C04293E00792AE8 /* SpeechViewModel.swift in Sources */,
 				A36257912C024AE8005268FC /* GestureRecapView.swift in Sources */,
 				A343B59F2C031C1800861A1B /* OnboardDeviceView2.swift in Sources */,
 				A3817E262BFEF1500025E6E5 /* CustomTabButton.swift in Sources */,
@@ -453,12 +480,13 @@
 				A3817E032BFEE8280025E6E5 /* TelegrafMultipeerSession.swift in Sources */,
 				A3817E0F2BFEEA120025E6E5 /* FontName.swift in Sources */,
 				A3817E0C2BFEEA0D0025E6E5 /* LandingView.swift in Sources */,
-				A3817DD82BFEE7A00025E6E5 /* Telegraf_v2App.swift in Sources */,
 				A343B5A62C03651800861A1B /* Morse.swift in Sources */,
 				A3817E242BFEF11F0025E6E5 /* ReceiverView.swift in Sources */,
 				A3817E292BFEF5E70025E6E5 /* TabButton.swift in Sources */,
 				A3817E072BFEE8310025E6E5 /* StartView.swift in Sources */,
+				A3D66CCF2C04153000792AE8 /* Telegraf_v2App.swift in Sources */,
 				A36257842C022D22005268FC /* OnboardDeviceView1.swift in Sources */,
+				A3D66CD32C046EE500792AE8 /* MorseOnboardView.swift in Sources */,
 				A343B5992C0311D400861A1B /* ButtonView.swift in Sources */,
 				A343B5A12C03271100861A1B /* OnboardDeviceView3.swift in Sources */,
 				A362578F2C024ADA005268FC /* MorseGuideView.swift in Sources */,

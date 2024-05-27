@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FinishOnboardView: View {
+    @StateObject private var speech = SpeechViewModel()
     var body: some View {
         ZStack {
             Color("Black")
@@ -37,11 +38,15 @@ struct FinishOnboardView: View {
                     .frame(maxWidth: 450)
                 
                 
-                NavigationLink(destination: GestureTrainingView1(), label: {
+                NavigationLink(destination: StartView(), label: {
                     ButtonView(buttonText: "Done")
                 })
             }
             .padding()
+        }
+        .onAppear {
+            let textToSpeak = "Remember, you can swipe up to send your message to other device. There are still more gestures to explore. You can learn them in the Gesture Recap."
+            speech.speak(textToSpeak)
         }
     }
 }

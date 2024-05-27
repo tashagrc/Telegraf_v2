@@ -11,6 +11,9 @@ struct ReceiverView : View {
     @EnvironmentObject var rpsSession: TelegrafMultipeerSession
     @State var receiveMessage: String = ""
     @State var messageList: [String] = []
+    
+    let soundPlayer = SoundPlayer()
+    
     var body: some View {
         VStack {
             Text("Receiver")
@@ -18,7 +21,9 @@ struct ReceiverView : View {
                     .padding()
 
             List(messageList, id: \.self) { message in
-                Text(message)
+                Text(message).onTapGesture {
+                    soundPlayer.playMorseCode(message)
+                }
             }
 
             Spacer()

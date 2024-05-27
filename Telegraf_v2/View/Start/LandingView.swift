@@ -14,6 +14,7 @@
 import SwiftUI
 
 struct LandingView: View {
+    @StateObject private var speech = SpeechViewModel()
     var body: some View {
         NavigationStack {
             ZStack {
@@ -46,6 +47,10 @@ struct LandingView: View {
                 .padding()
             }
         }.accentColor(.white)
+            .onAppear {
+                let textToSpeak = "Welcome to Telegraf. Chat like it's the 1800s."
+                speech.speak(textToSpeak)
+            }
     }
 }
 

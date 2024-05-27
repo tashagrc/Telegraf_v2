@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GestureSuccessView: View {
+    @StateObject private var speech = SpeechViewModel()
     var body: some View {
         ZStack {
             Color("Black")
@@ -37,11 +38,15 @@ struct GestureSuccessView: View {
                 }
                 
                 
-                NavigationLink(destination: MorseGuideView(), label: {
+                NavigationLink(destination: FinishOnboardView(), label: {
                     ButtonView(buttonText: "Learn Morse Code")
                 })
             }
             .padding()
+        }
+        .onAppear {
+            let textToSpeak = "Well done! You just wrote an A."
+            speech.speak(textToSpeak)
         }
     }
 }

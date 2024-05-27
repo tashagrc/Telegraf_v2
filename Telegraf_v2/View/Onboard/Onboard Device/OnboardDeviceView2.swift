@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct OnboardDeviceView2: View {
+    @StateObject private var speech = SpeechViewModel()
     var body: some View {
         ZStack {
             Color("Black")
@@ -44,6 +45,10 @@ struct OnboardDeviceView2: View {
                 })
             }
             .padding()
+        }
+        .onAppear {
+            let textToSpeak = "Send and receive messages using Morse Code."
+            speech.speak(textToSpeak)
         }
     }
 }
